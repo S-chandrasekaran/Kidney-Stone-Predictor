@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # Load dataset
-df = pd.read_csv("kidney_stone_data.csv")
+df = pd.read_csv("kidney-stone-dataset.csv")
 
 # Drop index column if present
 df.drop(columns=df.columns[0], inplace=True)
@@ -37,7 +37,7 @@ model.fit(X_train, y_train)
 # Evaluate
 y_pred = model.predict(X_test)
 print("Classification Report:\n", classification_report(y_test, y_pred))
-print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))d
+print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 import streamlit as st
 import numpy as np
 
