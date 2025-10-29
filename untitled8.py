@@ -42,7 +42,7 @@ import streamlit as st
 import numpy as np
 
 st.title("Kidney Stone Prediction App")
-st.write("Developed by CHANDRASEKARAN S")
+st.write("Developed by CHANDRASEKARAN S & AZHAGURAJAN V")
 # Input fields
 gravity = st.slider("Urine Specific Gravity", 1.005, 1.035, step=0.001)
 ph = st.slider("Urine pH", 4.5, 8.0, step=0.1)
